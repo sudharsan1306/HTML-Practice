@@ -19,7 +19,7 @@
             </div>
             <div>
                 
-                <table  border="3" cellspacing="20" >
+                <table  border="0" cellspacing="20" >
                     <tr >
                         <th  colspan="5" style="background-color: rgb(61, 61, 174); color: white; font-size: 28px;font-family: Verdana, Geneva, Tahoma, sans-serif; text-transform: uppercase;">
                             Registration
@@ -32,7 +32,7 @@
                         <label for="id" style=" text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 24px;">full name<span style="color: brown;">*</span>:</label>
                         </td>
                         <td>
-                            <input type="text" id="id" required  style="font-size: 24px;">
+                            <input type="text" id="id" required placeholder="full name capital"  style="font-size: 24px;">
  
                         </td>
                    </tr>
@@ -56,30 +56,128 @@
                  <tr>
                     <td >
                       <label for="dob" style=" font-size: 24px; text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;"> date of birth<span style="color: brown;">*</span>:</label></td>
-                      <td > <input type="date" name="dob" id="dob" style="font-size: 24px;"></td>
+                      <td > <input type="date" name="dob" id="dob" required style="font-size: 24px;"></td>
+                 </tr>
+
+                   <tr>
+                    <td><label for="aadhaar no" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">aadhaar no<span style="color: brown;">*</span>:</label></td>
+                     <td><input type="number" name="aadhaar no" id="aadhaar no"  required style="font-size: 24px;"></td>
+                </tr>
+
+
+               <tr>
+                    <td >
+                      <label for="aadhar" style=" font-size: 24px; text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;"> aadhaar card <span style="color: brown;">*</span>: </label></td>
+                      <td > <input type="file" name="aadhar" id="aadhar" required style="font-size: 24px;"></td>
                  </tr>
                  <tr>
+
                     <td><label for="father" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">father's name<span style="color: brown;">*</span>:</label></td>
-                     <td><input type="text" name="father" id="father" style="font-size: 24px;"></td>
+                     <td><input type="text" name="father" id="father" placeholder="full name capital" required style="font-size: 24px;"></td>
                 </tr>
 
                  <tr>
                     <td><label for="mother" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">mother's name<span style="color: brown;">*</span>:</label></td>
-                     <td><input type="text" name="mother" id="mother" style="font-size: 24px;"></td>
+                     <td><input type="text" name="mother" id="mother" placeholder="full name capital" required style="font-size: 24px;"></td>
                 </tr>
                  <tr>
                     <td><label for="marriage" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">marriage status<span style="color: brown;">*</span>:</label></td>
-                     <td><input type="" name="marriage" id="marriage" style="font-size: 24px; required "></td>
+                     <td> <select name="marriage" id="marriage" required style="font-size: 24px;" >
+                        <option value="1">select</option>
+                        <option value="2">YES</option>
+                        <option value="3">NO</option>
+                     </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="spouse" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;"> spouse</label> </td>
+                        <td><input type="text" id="spouse" name="spouse" placeholder="if married" style="font-size: 24px; " >
+                    </td>
                 </tr>
 
+                <tr>
+                    <td><label for="place" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">applicant place of birth<span style="color: brown;">*</span>:</label></td>
+                     <td><input type="text" name="place" id="place" required style="font-size: 24px;"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="mobile" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">mobile no<span style="color: brown;">*</span>:</label></td>
+                     <td><input type="tel" name="mobile" id="mobile" required style="font-size: 24px;"></td>
+                </tr>
+
+                 <tr>
+                    <td><label for="email" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">email address<span style="color: brown;">*</span>:</label></td>
+                     <td><input type="email" name="email" id="email" placeholder="some@gmail.com" required style="font-size: 24px;"></td>
+                </tr>
+
+                
+
+                  <tr>
+                    <td><label for="lan" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">mother tongue<span style="color: brown;">*</span>:</label></td>
+                     <td><input type="text" name="lan" id="lan" required style="font-size: 24px;"></td>
+                </tr>
+
+                  <tr>
+                    <td><label for="nation" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">nationality<span style="color: brown;">*</span>:</label></td>
+                     <td>
+                        <select name="nation" id="nation">
+                            <option value="1">select</option>
+                            <option value="2">INDIAN</option>
+                            <option value="3">OTHERS</option>
+                        </select>
+                     </td>
+                </tr>
+
+                 <tr>
+                    <td><label for="religion" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">religion<span style="color: brown;">*</span>:</label></td>
+                     <td>
+                        <select name="religion" id="religion">
+                            <option value="1">select</option>
+                            <option value="2">HINDU</option>
+                            <option value="3">MUSLIN</option>
+                            <option value="3">CRISTIAN</option>
+                            <option value="3">OTHERS</option>
+                        </select>
+                     </td>
+                </tr>
+
+
+                <tr>
+                    <td><label for="com" style="font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">community<span style="color: brown;">*</span>:</label></td>
+                     <td>
+                        <select name="com" id="com">
+                            <option value="1">select</option>
+                            <option value="2">OBC</option>
+                            <option value="3">MBC</option>
+                            <option value="3">BC</option>
+                            <option value="3">SC/ST</option>
+                            <option value="3">OTHERS</option>
+                            
+                            
+                        </select>
+                     </td>
+                </tr> 
+
+                
+
+                
 
 
                 <tr>
                     <td align="right">
-                      <button type="submit" style=" background-color: aquamarine; font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;" >
-                        submit
+                        <button style="background-color: aquamarine; font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                            submit
+                        </button>
+                    </td>
+
+                    <td align="left">
+                      <button type="reset" style=" background-color: rgb(245, 168, 36); font-size: 24px;text-transform: uppercase; font-family: Verdana, Geneva, Tahoma, sans-serif;" >
+                        reset
                       </button>
                     </td>
+
+
+                    
                 </tr>
 
                 </table>
